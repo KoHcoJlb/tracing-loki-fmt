@@ -71,12 +71,10 @@ struct Visitor {
 
 impl Visit for Visitor {
     fn record_str(&mut self, field: &Field, value: &str) {
-        if field.name() != "message" {
-            self.fields.push(LabelPairAdapter {
-                name: field.name().into(),
-                value: value.into(),
-            })
-        }
+        self.fields.push(LabelPairAdapter {
+            name: field.name().into(),
+            value: value.into(),
+        })
     }
 
     fn record_debug(&mut self, field: &Field, value: &dyn Debug) {
