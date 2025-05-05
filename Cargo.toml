@@ -1,7 +1,12 @@
 [package]
 name = "tracing-loki-fmt"
-version = "0.1.0"
+version = "0.1.2"
 edition = "2021"
+repository = "https://github.com/KoHcoJlb/tracing-loki-fmt"
+authors = ["Ihor Stuzhuk"]
+keywords = ["tracing", "loki"]
+license = "GPL-3.0-or-later"
+description = "Grafana Loki tracing layer"
 
 [dependencies]
 tokio = "1"

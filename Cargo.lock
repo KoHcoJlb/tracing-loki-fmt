@@ -1458,7 +1458,7 @@ dependencies = [
 
 [[package]]
 name = "tracing-loki-fmt"
-version = "0.1.0"
+version = "0.1.2"
 dependencies = [
  "eyre",
  "itertools 0.14.0",
